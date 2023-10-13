@@ -3,13 +3,10 @@ import dotenv from "dotenv";
 class Configuration {
     static port;
     static urlApi;
-    static urlAgenda;
-    static urlAgendar;
+    static urlAgendamento;
     static urlAvaliacao;
     static urlMetas;
-    static urlListar;
-    static urlPaciente;
-    static urlCodigo;
+    static urlImagem;
     static urlPlano;
 }
 
