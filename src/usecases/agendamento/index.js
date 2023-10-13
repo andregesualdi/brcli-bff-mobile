@@ -12,4 +12,3 @@ export default agendamentoService;
 export {
     getAgendamento
 };
-
