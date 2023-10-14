@@ -18,7 +18,27 @@ export default function makePacienteGateway() {
         return response;
     }
 
+    async function updateImagem(idPaciente, paciente) {
+        const headers = {
+            'codigo-paciente': idPaciente
+        };
+        const body = {
+            imagem: paciente.imagem
+        };
+        const url = Configuration.urlApi + Configuration.urlImagem;
+        let response;
+        await fetchWrapper.put(url, body, headers)
+            .then(data => {
+                response = data;
+            })
+            .catch((error) => {
+                throw error;
+            });
+        return response;
+    }
+
     return Object.freeze({
-        recuperarDadosPaciente
+        recuperarDadosPaciente,
+        updateImagem
     });
 }
