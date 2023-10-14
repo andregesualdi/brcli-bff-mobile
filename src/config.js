@@ -8,6 +8,7 @@ class Configuration {
     static urlMetas;
     static urlImagem;
     static urlPlano;
+    static urlPaciente;
 }
 
 export function configEnvironments() {
@@ -19,6 +20,7 @@ export function configEnvironments() {
     Configuration.urlMetas = process.env.URL_METAS;
     Configuration.urlImagem = process.env.URL_IMAGEM;
     Configuration.urlPlano = process.env.URL_PLANO_ALIMENTAR;
+    Configuration.urlPaciente = process.env.URL_DADOS_PACIENTE;
 }
 
 export default Configuration;
